@@ -1,0 +1,4 @@
+name: lobby-education
+version: '1.0-SNAPSHOT'
+main: io.volqe.education.Lobby
+api-version: '1.21'
