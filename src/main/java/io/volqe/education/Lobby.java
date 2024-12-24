@@ -18,6 +18,10 @@ public final class Lobby extends JavaPlugin {
         pluginManager = getServer().getPluginManager();
         pluginLoader();
         getLogger().info(ChatColor.GREEN + "[EDUCATION] | Plugin enabled");
+
+        new PlayerConnectionHandler().test();
+
+
     }
 
     @Override
@@ -26,6 +30,7 @@ public final class Lobby extends JavaPlugin {
     }
 
     private void pluginLoader(){
+
         getLogger().info(ChatColor.GOLD + "[EDUCATION] | Plugin loaded.");
         PlayerConnectionHandler playerConnectionHandler = new PlayerConnectionHandler();
         PlayerCancelHandler playerCancelHandler = new PlayerCancelHandler();
